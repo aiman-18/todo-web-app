@@ -1,3 +1,5 @@
+const clearButton =
+    document.getElementById("clearButton");
 const taskInput = document.getElementById("taskInput");
 
 const addButton = document.getElementById("addButton");

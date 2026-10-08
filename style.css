@@ -128,3 +128,24 @@ h1 {
 
     color: white;
 }
+#clearButton {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ef476f;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#clearButton:hover {
+    opacity: 0.9;
+}
