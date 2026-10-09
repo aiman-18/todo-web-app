@@ -1,151 +1,131 @@
+```css
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-
-    background: #f4f6f8;
-
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #edf6f9;
+    color: #243238;
+    padding: 30px 15px;
 }
 
 .container {
-    width: 450px;
-
+    max-width: 500px;
+    margin: auto;
+    padding: 28px;
     background: white;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px #00000012;
 }
 
 h1 {
     text-align: center;
-
-    margin-bottom: 25px;
+    color: #006d77;
 }
 
-.input-section {
-    display: flex;
-
-    gap: 10px;
+.subtitle {
+    text-align: center;
+    margin: 8px 0 24px;
+    color: #68777b;
 }
 
-#taskInput {
-    flex: 1;
-
-    padding: 12px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
-
-    font-size: 16px;
-}
-
-#addButton {
-    padding: 12px 18px;
-
-    border: none;
-
-    border-radius: 6px;
-
+.total-card {
     background: #006d77;
-
     color: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
 
-    cursor: pointer;
+.total-card h2 {
+    margin-top: 8px;
+    font-size: 30px;
+}
 
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5d8;
+    border-radius: 7px;
     font-size: 15px;
 }
 
-#addButton:hover {
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    background: #006d77;
+    color: white;
+}
+
+form button:hover {
     background: #00545c;
 }
 
-#taskList {
+.list-heading {
+    margin-top: 28px;
+    font-size: 20px;
+}
+
+#expenseList {
     list-style: none;
-
-    margin-top: 25px;
+    margin-top: 12px;
 }
 
-.task {
+.expense-item {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
-    padding: 12px;
-
-    margin-bottom: 10px;
-
-    background: #f1f3f5;
-
-    border-radius: 6px;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e6ebed;
 }
 
-.task.completed span {
-    text-decoration: line-through;
-
-    color: gray;
+.expense-details {
+    overflow-wrap: anywhere;
 }
 
-.task-buttons {
-    display: flex;
-
-    gap: 5px;
+.expense-details small {
+    display: block;
+    color: #68777b;
+    margin-top: 5px;
 }
 
-.complete-button,
-.delete-button {
-    border: none;
-
-    padding: 7px 10px;
-
-    border-radius: 5px;
-
-    cursor: pointer;
-}
-
-.complete-button {
-    background: #8ac926;
-
-    color: white;
+.expense-right {
+    text-align: right;
+    flex-shrink: 0;
 }
 
 .delete-button {
-    background: #ef476f;
-
-    color: white;
-}
-#clearButton {
-    width: 100%;
-
-    margin-top: 15px;
-
-    padding: 10px;
-
-    border: none;
-
-    border-radius: 6px;
-
-    background: #ef476f;
-
-    color: white;
-
-    cursor: pointer;
+    background: #ffe3e3;
+    color: #b42318;
+    margin-top: 5px;
+    padding: 6px 9px;
 }
 
-#clearButton:hover {
-    opacity: 0.9;
+#emptyMessage {
+    color: #68777b;
+    margin-top: 12px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 18px;
+    }
 }
