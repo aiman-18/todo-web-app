@@ -124,8 +124,4 @@ form button:hover {
     margin-top: 12px;
 }
 
-@media (max-width: 400px) {
-    .container {
-        padding: 18px;
-    }
-}
+
